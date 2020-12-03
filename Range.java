@@ -24,7 +24,8 @@ public class Range implements IntegerSequence {
 
   //@throws NoSuchElementException when hasNext() is false.
   public int next(){
-    return 0;
+    if (hasNext()==false) throw new NoSuchElementException();
+    else return (current+1);
   }
 
 }
