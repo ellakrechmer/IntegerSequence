@@ -11,8 +11,7 @@ public class Range implements IntegerSequence {
   }
 
   public void reset(){
-    start=0;
-    end=0;
+    current=start-1;
   }
   public int length(){
     return (end-start)+1;
