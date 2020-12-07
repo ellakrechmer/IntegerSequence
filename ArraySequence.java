@@ -8,7 +8,13 @@ public class ArraySequence implements IntegerSequence{
     for (int i=0; i<other.length; i++) {
       data[i]=other[i];
     }
-    curentIndex=0;
+    currentIndex=0;
+  }
+  public void reset(){
+    currentIndex=0;
+  }
+  public int length(){
+    return data.length;
   }
 
 }
